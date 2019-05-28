@@ -1,0 +1,25 @@
+    <div class="contents">
+      <% @tweets.each do |tweet| %>
+        <div class="message clearfix">
+          <div class="message_box">
+            <p class="user_name">
+              <%= tweet.user.nickname %>
+              <span class="time"><%= tweet.created_at.strftime("%Y/%m/%d %H:%M") %></span>
+            <p>
+            <p class="text">
+              <%= tweet.text %>
+            </p>
+            <div class="message_action">
+              <ul class="message_action__btns">
+                <%= link_to '削除', "/tweets/#{tweet.id}", class: "message_action__btn btn", method: :delete %>
+                <%= link_to '編集', "/tweets/#{tweet.id}/edit", class: "message_action__btn btn", method: :get %>
+                <%# <li><a href="tweets/edit">Edit</a></li> %>
+                <%# <li><a href="削除するパス">Delete</a></li> %>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <%= paginate(@tweets) %>
+    </div>
+

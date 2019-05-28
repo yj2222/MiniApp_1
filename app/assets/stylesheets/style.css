@@ -1,0 +1,247 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #57C3E9;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.header-side__btn{
+  line-height: 38px;
+  padding: 10px;
+}
+
+.btn{
+  /* border: solid 1px #38aef0;
+  color: #38aef0; */
+  border: solid 1px #57C3E9;
+  color: #57C3E9;
+  text-align: center;
+  border-radius: 5px;
+}
+
+body, html {
+  height: 100%;
+  background-color: #ddd;
+}
+
+h1, h2, h3, h4, h5, h6, p, body {
+  font-size: 14px;
+  color: #ddd;
+  /* color: #4a4a4a; */
+  font-family: sans-serif;
+}
+
+.clearfix:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.wrapper{
+  min-width: 960px;
+  }
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 80px;
+  background-color: #4a4a4a;
+  border-bottom: 2px solid #bbb;
+  padding: 0 20px;
+}
+
+.header-logo{
+  width: 100px;
+  line-height: 30px;
+  margin-top: 5px;
+}
+
+.header-title{
+  height: 80px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.header-side{
+  width: 100px;
+}
+
+h2{
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  color: #4a4a4a; */
+}
+
+.contents{
+  height: 100%;
+  width: 600px;
+  margin: 20px auto 0;
+  /* background-color: white; */
+}
+
+form{
+  width: 600px;
+  background-color: white;
+  padding: 5px 0 0;
+  color: #4a4a4a;
+  padding: 10px;
+}
+
+input{
+  width: 570px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input[type="submit"] {
+  /* background-color: #57C3E9; */
+  border-radius: 20px;
+  color: #57C3E9;
+  border: 1px solid #57C3E9;
+  font-size: 18px;
+}
+
+textarea{
+  width: 570px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #D8D8D8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+/* .input-box{
+  float: left;
+  width: 500px;
+}
+
+.input-box input{
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+form img{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+  height: 24px;
+  margin: 0 5px 5px 34px;
+} */
+
+/* .input-box{
+  width: 580px;
+  margin: 0 auto;
+} */
+
+/* .input-box input{
+  width: 100%;
+  margin: 0 0 10px 0;
+} */
+
+.submit-button{
+  width: 70px;
+  margin: 10px 0;
+}
+
+
+
+.button-box{
+  height: 50px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.message{
+  min-height: 100px;
+  /* width: 598px; */
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+/* .message img{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  float: left;
+  height: 48px;
+  margin: 10px;
+}
+
+.message_box{
+  float: left;
+  min-height: 100px;
+  width: 505px;
+  padding: 9px 0 10px;
+} */
+
+.message_box{
+  min-height: 100px;
+  padding: 10px;
+  background-color: #4a4a4a;
+
+}
+
+.message_action{
+  border-top: 1px solid #bbb;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.message_action__btns{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message_action__btn{
+  padding: 0 10px;
+  margin-left: 5px;
+}
+
+/* .message_action__btns li+li{
+  padding: 0 10px;
+} */
+
+
+.user_name{
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.time{
+  font-weight: normal;
+  font-size: 10px;
+  color: #bbb;
+}
+
+.text{
+  line-height: 18px;
+  padding: 10px 0;
+}

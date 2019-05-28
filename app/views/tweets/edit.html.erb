@@ -1,0 +1,11 @@
+    <div class="contents">
+      <%= form_tag("/tweets/#{@tweet.id}", method: :patch, class: "clearfix" ) do %>
+        <h2>編集する</h2>
+        <div class="input-box">
+          <textarea rows="20" cols="40" name="text"><%= @tweet.text %></textarea>
+        </div>
+        <div class="button-box">
+          <input type="submit" class="submit-button">
+        </div>
+      <% end %>
+    </div>

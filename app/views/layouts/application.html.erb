@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nekotter3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header">
+        <div class="header-logo">
+          <p>ようこそ : </p>
+          <% if user_signed_in? %>
+            <p> &nbsp; <%= current_user.nickname %> さん</p>
+          <% else %>
+            <p> &nbsp; ゲスト さん</p>
+          <% end %>
+        </div>
+        <div class="header-title">
+          <a href="/tweets"><h1>MiniApp</h1></a>
+          <p>~初めての個人開発編~</p>
+        </div>
+        <% if user_signed_in? %>
+          <ul class="header-side">
+            <%= link_to "★新規投稿", "/tweets/new", class: "header-side__btn btn" %>
+            <%= link_to "ログアウト", destroy_user_session_path, class: "header-side__btn btn", method: :delete %>
+          </ul>
+        <% else %>
+          <ul class="header-side">
+            <%= link_to "ログイン", new_user_session_path, class: "header-side__btn btn" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "header-side__btn btn" %>
+          </ul>
+        <% end %>
+      </div>
+    </header>
+
+    <%= yield %>
+
+  </body>
+</html>
